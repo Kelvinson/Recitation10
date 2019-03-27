@@ -72,7 +72,7 @@ public class SortWithSwapsPlugin implements GamePlugin {
         System.out.println("Status of game: at method onNewMove()");
     }
 
-    public boolean isMoveValid(int x, int y) {
+    public boolean isMoveValid() {
         return this.move || !this.move;
     }
 
