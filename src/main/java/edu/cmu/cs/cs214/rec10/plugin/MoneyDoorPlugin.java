@@ -7,7 +7,8 @@ import edu.cmu.cs.cs214.rec10.framework.core.Player;
 import java.util.*;
 
 public class MoneyDoorPlugin implements GamePlugin {
-
+    private static final String GAME_NAME = "money door game";
+    static private final const String GAME_NAME = "money door game";
     private int[] arr = {-3, -2, -1, 0, 1, 2, 3, 4, 5, 6};
     private int ONE = 1;
     private int TEN = 10;
@@ -19,7 +20,7 @@ public class MoneyDoorPlugin implements GamePlugin {
     public HashMap<String, Integer> PlayerScores = new HashMap<String, Integer>();
 
     public String getGameName() {
-        return new String("money door game");
+        return GAME_NAME;
     }
 
     public int getGridWidth() {
